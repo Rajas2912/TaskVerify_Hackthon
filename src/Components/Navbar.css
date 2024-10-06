@@ -1,0 +1,122 @@
+/* Navbar Styling */
+.navbar {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between brand and links */
+  align-items: center; /* Vertically center the content */
+  background-color: rgb(0, 0, 0); /* Navbar background color */
+  padding: 10px 30px; /* Padding for better spacing */
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+  color: #ffffff; /* Brand text color */
+  font-size: 1.5rem; /* Font size for branding */
+  font-weight: bold; /* Bold font for emphasis */
+  left: 10%; /* Position brand logo slightly to the left */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Center Navbar Links */
+.navbar .navbar-nav {
+  margin: auto; /* Center the links */
+  display: flex; /* Use flexbox for the links */
+  justify-content: center; /* Center alignment */
+}
+
+/* Navbar Item Styling */
+.navbar .navbar-nav .nav-item {
+  margin: 0 15px; /* Add spacing between items */
+}
+
+/* Navbar Links Styling */
+.navbar-nav .nav-link {
+  color: #ffffff; /* Link color */
+  font-size: 1rem; /* Font size */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  text-decoration: none; /* Remove underline */
+}
+
+#login {
+  display: flex;
+  width: 7rem;
+  margin-left: 55%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-link.active {
+  color: white; /* Change color of active link */
+}
+
+/* Link Hover Effect */
+.navbar-nav .nav-link:hover {
+  color: rgb(101, 101, 175); /* Change hover color */
+  transform: scale(1.1); 
+}
+
+/* Navbar Profile Link on the Right */
+.navbar-nav.ms-auto {
+  margin-left: auto; /* Push to the right */
+}
+
+/* Brand Hover Effect */
+.navbar-brand:hover {
+  color: rgb(101, 101, 175); /* Change color on hover */
+}
+
+/* Assignment Icon Styling */
+.assignment-icon {
+   filter: brightness(0) invert(1);
+  width: 20px;  /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  margin-left: 5px; /* Space between the text and the icon */
+  margin-right: 10px;
+  vertical-align: middle; /* Aligns the image with text */
+}
+.chatbot-icon {
+  filter: brightness(0) invert(1);
+ width: 25px;  /* Adjust the width as needed */
+ height: 25px; /* Adjust the height as needed */
+ margin-left: 5px; /* Space between the text and the icon */
+ margin-right: 10px;
+ vertical-align: middle; /* Aligns the image with text */
+}
+.acc-icon {
+  filter: brightness(0) invert(1);
+ width: 35px;  /* Adjust the width as needed */
+ height: 35px; /* Adjust the height as needed */
+ margin-left: 120px; /* Space between the text and the icon */
+ vertical-align: middle; /* Aligns the image with text */
+}
+/* Responsive Design for Navbar */
+@media (max-width: 768px) {
+  .navbar .navbar-nav {
+    display: block; /* Stack links vertically on small screens */
+  }
+  .navbar-nav .nav-item {
+    margin: 10px 0; /* Add vertical spacing between items */
+  }
+}
+
+
+/* Navbar.css */
+
+.nav-item.dropdown {
+  position: relative; /* Position relative to enable absolute positioning of dropdown */
+}
+
+.dropdown-menu {
+  display: none; /* Hide the dropdown by default */
+  position: absolute; /* Position the dropdown menu absolutely */
+  top: 100%; /* Aligns the dropdown menu below the navbar item */
+  left: 0; /* Aligns the dropdown menu to the left */
+  z-index: 1000; /* Ensures dropdown appears above other elements */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+

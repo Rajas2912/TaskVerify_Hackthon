@@ -1,0 +1,88 @@
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #000000;
+  color: #f9f9f9;
+  padding: 20px 40px;
+  position: relative;
+  /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.footerLeft {
+  flex: 1;
+}
+
+.teamName {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.teamInfo {
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.footerRight {
+  flex: 1;
+}
+
+.footerTitle {
+  font-size: 20px;
+  margin-left: -100px;
+  margin-bottom: 10px;
+}
+
+.teamMembers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px; /* Spacing between columns and rows */
+  list-style: none;
+  padding: 0;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.teamMembers li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.teamMembers a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.teamMembers a:hover {
+  color: #0077b5; /* LinkedIn blue on hover */
+}
+
+.icon {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.footerBottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #000000;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.footerBottom p {
+  margin: 0;
+}

@@ -1,0 +1,38 @@
+.fbMain {
+  display: flex; /* Align items horizontally */
+  justify-content: space-between; /* Place space between text and image */
+  align-items: center; /* Vertically center both the text and image */
+  padding: 20px; /* Keep your current padding */
+}
+
+.fbText {
+  flex: 1; /* Let the text take up remaining space */
+}
+
+.fb1 {
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.fb2 {
+  margin-left: 32px;
+  font-size: 30px;
+  color: white;
+}
+
+.fbImage {
+  flex: 1; /* Let the image take equal space */
+  text-align: right; /* Align image to the right */
+}
+
+.fbImage img {
+  margin-top: 150px;
+  width: 750px; /* Ensure image scales properly */
+  height: auto;
+  border-radius: 10px; /* Optional rounding for the image */
+  /* Optionally, add box-shadow for depth */
+}

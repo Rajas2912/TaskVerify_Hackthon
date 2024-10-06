@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Spacema";
+  src: local("SpacemaBlack"),
+    url("./fonts/Spacema-Black.otf") format("opentype");
+  font-weight: normal;
+}

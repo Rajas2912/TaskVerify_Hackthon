@@ -1,0 +1,98 @@
+.assbanner {
+  background-color: transparent;
+  border: solid 2px grey;
+  color:white;
+  margin-left:20%;
+  margin-top: 5%;
+  margin-right:20%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.asscheck {
+  max-width: 800px;
+  color:white;
+  margin: auto;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.label1 {
+  color: #fff0f0;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  color:rgb(0, 0, 0);
+  padding: 10px;
+  margin-top: 5px;
+  /* border: solid 2px grey; */
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.createButton {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #261943;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  border:solid 2px white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.createButton:disabled {
+  background-color: #5a5a5a;
+  cursor: not-allowed;
+}
+
+.createButton:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.assbelow {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #717171;
+  color:white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  width: 48%;
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
+h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h5 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+.assanswer{
+  border: solid 2px rgb(255, 255, 255);
+  max-width: 100%;
+  width: 1000px;
+}

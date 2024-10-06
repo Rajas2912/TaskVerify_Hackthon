@@ -1,0 +1,6 @@
+.mainpage {
+  position: relative;
+  z-index: 1; /* Ensure it's on top of the background effect */
+  padding: 20px;
+  color: white; /* Ensure text is readable */
+}

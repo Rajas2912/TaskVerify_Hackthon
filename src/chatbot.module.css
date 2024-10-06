@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* display: flex;
+  justify-content: center;
+  /* Center the chat container horizontally */
+  /* align-items: center; */
+  /* Center the chat container vertically */
+  /* height: 100vh; */
+  /* Full viewport height */
+  /* background-color: #000000; */
+  /* Light background for the whole page */
+  font-family: Arial, sans-serif;
+}
+
+.chatContainer {
+  margin-top: 3%;
+  width: 90%;
+  /* Fixed width for better layout */
+  height: 600px;
+  /* Fixed height for better layout */
+  margin-left: 5%;
+  /* padding: 10px; */
+  /* Margin for spacing */
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border:solid 2px white;
+  /* White background for the chat container */
+  display: flex;
+  flex-direction: column;
+}
+
+.chatBox {
+  flex: 1;
+  padding: 5%;
+  overflow-y: auto;
+  background-color: #000000;
+  /* Background color for the message box */
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px 10px 0 0;
+  /* Rounded corners at the top */
+}
+
+.message {
+  margin: 10px 0;
+  font-size: large;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: fit-content;
+  word-wrap: break-word;
+  position: relative;
+  /* For positioning the messages */
+}
+
+.message.user {
+  align-self: flex-end;
+  /* Align user message to the right */
+  background-color: #daf1da;
+  /* Light green for user messages */
+  color: black;
+  text-align: left;
+  border-top-right-radius: 0px;
+  /* Custom styling for user bubble */
+  margin-left: auto;
+  /* Push user messages to the right */
+}
+
+.message.assistant {
+  align-self: flex-start;
+  /* Align assistant message to the left */
+  background-color: #7340f6;
+  /* Darker purple for assistant messages */
+  color: white;
+  text-align: left;
+  border-top-left-radius: 0px;
+  /* Custom styling for assistant bubble */
+  margin-right: auto;
+  /* Push assistant messages to the left */
+}
+
+.form {
+  display: flex;
+  padding: 10px;
+  background-color: #000000;
+  /* White background for form */
+  border-radius: 0 0 10px 10px;
+  /* Rounded corners at the bottom */
+}
+
+.inputField {
+  flex: 3;
+  padding: 15px;
+  font-size: 16px;
+  /* Reduced font size for better fit */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #e0e0e0;
+  /* Slightly darker input background */
+}
+
+.inputField:focus {
+  border-color: #cbdbec;
+  outline: none;
+}
+
+.sendButton {
+  flex: 0.5;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #3b3b8a;
+  /* Dark purple for button */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sendButton:hover {
+  background-color: #2e2e65;
+  /* Darker purple on hover */
+}

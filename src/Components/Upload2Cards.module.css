@@ -1,0 +1,96 @@
+/* src/Upload_Ass.module.css */
+.cardContainer {
+  display: flex;
+  margin: 100px;
+  /* margin-left: 10px; */
+/* background-color: white; */
+  border-radius: 25px;
+  padding: 5%;
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 30px; /* Space between the cards */
+  /* box-shadow: 5px 5px 5px 5px rgba(136, 136, 136, 0.5); */
+
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: rgb(15, 15, 15);
+  background: linear-gradient(90deg, rgba(15, 15, 15, 1) 0%, rgba(148, 148, 148, 1) 100%);
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  margin: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: solid 2px grey;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.cardBody {
+  border-radius: 20px  20px 0 0;
+  background-color: black; /* Change the card body color to black */
+  padding: 20%; /* Add some padding */
+  color: white; /* Change text color to white for contrast */
+}
+
+.image img {
+  height: 150px;
+  border-radius: 100px;
+  padding: 5px;
+  margin-top: -80px;
+  margin-left: 100px;
+  background: white;
+  border: solid 2px black;
+}
+
+.title {
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.desc {
+  text-align: center;
+  margin: 10px;
+  font-size: 14px;
+}
+
+.uploadButton {
+  font-size: 16px;
+  background: rgb(47,34,88);
+background: linear-gradient(90deg, rgba(47,34,88,1) 0%, rgba(6,6,6,1) 100%);
+  margin: 10px 100px;
+  padding: 10px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.uploadButton a {
+  text-decoration: none;
+  /* background-color: red; */
+  color: white;
+  border: none;
+} 
+
+.uploadButton:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+@media (max-width: 968px) {
+  .cardContainer {
+    flex-direction: column; /* Stack the cards vertically on smaller screens */
+    align-items: center;
+  }
+}

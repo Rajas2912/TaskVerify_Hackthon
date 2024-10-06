@@ -1,0 +1,70 @@
+.cardContainer {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 16px;
+  width: 100%; /* Make it responsive */
+  max-width: 1300px; /* Max width for the card */
+  margin: 20px auto; /* Center the card with margin */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.customButton {
+  background: linear-gradient(90deg, rgba(47,34,88,1) 0%, rgba(6,6,6,1) 100%);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.customButton:hover {
+  background-color: #0056b3; /* Darken button on hover */
+}
+
+.customButton.active {
+  background-color: #28a745; /* Change color when active */
+}
+
+.contentSection {
+  margin-top: 20px;
+  width: 100%;
+  display: flex; /* Use flexbox for content alignment */
+  justify-content: center; /* Center the content section */
+}
+
+.graphSection {
+  height: 650px; /* Increase height for better visibility */
+  width: 100%;   /* Make sure the graph takes full width */
+  max-width: 1000px; /* Set a max-width to control the size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.leaderboardSection ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.leaderboardSection li {
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
